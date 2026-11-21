@@ -7,7 +7,7 @@
     "proxy": null,
     "userAgent": "Mozilla/5.0 (Linux; Android 14; SM-S928B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
     "intervalGetNewCookie": null,
-    "notes": "set intervalGetNewCookie to 1440 only after adding password"
+    "notes": "set intervalGetNewCookie to 1440 only after adding password above"
   },
   "antiInbox": false,
   "language": "en",
@@ -28,7 +28,10 @@
   ],
   "whiteListMode": {
     "enable": false,
-    "whiteListIds": ["", ""]
+    "whiteListIds": [
+      "61585911203262",
+      "61582151946617"
+    ]
   },
   "whiteListModeThread": {
     "enable": false,
@@ -36,7 +39,7 @@
   },
   "database": {
     "type": "mongodb",
-    "uriMongodb": "PUT_NEW_URI_HERE_AFTER_ROTATING_PASSWORD",
+    "uriMongodb": "mongodb+srv://mrx09041998_db_user:SoTnUVImBkAZ4mRN@priyanshu.qjfnlck.mongodb.net/botdb?retryWrites=true&w=majority",
     "autoSyncWhenStart": false,
     "autoRefreshThreadInfoFirstTime": true
   },
@@ -60,7 +63,9 @@
     "timeWindow": 10,
     "banDuration": 24
   },
-  "autoRestart": { "time": null },
+  "autoRestart": {
+    "time": null
+  },
   "autoUptime": {
     "enable": false,
     "timeInterval": 180,
@@ -81,8 +86,15 @@
     "logNoti": true
   },
   "notiWhenListenMqttError": {
-    "telegram": { "enable": false, "botToken": "", "chatId": "" },
-    "discordHook": { "enable": false, "webhookUrl": "" }
+    "telegram": {
+      "enable": false,
+      "botToken": "",
+      "chatId": ""
+    },
+    "discordHook": {
+      "enable": false,
+      "webhookUrl": ""
+    }
   },
   "hideNotiMessage": {
     "commandNotFound": false,
